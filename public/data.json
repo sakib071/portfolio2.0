@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "skill": "React",
+        "description": "JavaScript library for building user interfaces.",
+        "img": "https://i.ibb.co/Sfr85zR/React-Symbol.png",
+        "category": "Development"
+    },
+    {
+        "id": 2,
+        "skill": "Node.js",
+        "description": "JavaScript runtime for server-side development.",
+        "img": "https://i.ibb.co/nDbL7MR/Node-js-logo.png",
+        "category": "Development"
+    },
+    {
+        "id": 3,
+        "skill": "Express.js",
+        "description": "Web application framework for Node.js.",
+        "img": "https://i.ibb.co/SKrZ2tf/express-JS.png",
+        "category": "Development"
+    },
+    {
+        "id": 4,
+        "skill": "MongoDB",
+        "description": "NoSQL database for modern applications.",
+        "img": "https://i.ibb.co/yPBmLCN/Mongo-DB-Logo-svg.png",
+        "category": "Development"
+    },
+    {
+        "id": 5,
+        "skill": "Firebase",
+        "description": "Google's mobile and web application development platform.",
+        "img": "https://i.ibb.co/4mZnyKP/firebase.png",
+        "category": "Development"
+    },
+    {
+        "id": 6,
+        "skill": "MySQL",
+        "description": "Open-source relational database management system.",
+        "img": "https://i.ibb.co/ZfjBmjD/Mysql-logo.png",
+        "category": "Development"
+    },
+    {
+        "id": 7,
+        "skill": "Tailwind CSS",
+        "description": "Utility-first CSS framework for rapid UI development.",
+        "img": "https://i.ibb.co/h8kS591/tailwindcss-logo.png",
+        "category": "Development"
+    },
+    {
+        "id": 8,
+        "skill": "DaisyUI",
+        "description": "Set of additional components for Tailwind CSS.",
+        "img": "https://i.ibb.co/G7Y9XwL/daisyUI.png",
+        "category": "Development"
+    },
+    {
+        "id": 9,
+        "skill": "Figma",
+        "description": "Collaborative interface design tool.",
+        "img": "https://i.ibb.co/PQRdQtx/figma.png",
+        "category": "UI"
+    },
+    {
+        "id": 10,
+        "skill": "Adobe XD",
+        "description": "Vector-based design and prototyping tool.",
+        "img": "https://i.ibb.co/QC6hVVM/Adobe-XD-CC-icon-svg.png",
+        "category": "UI"
+    },
+    {
+        "id": 11,
+        "skill": "Adobe Illustrator",
+        "description": "Vector graphics editor for illustrations and designs.",
+        "img": "https://i.ibb.co/Dtf751Y/Adobe-Illustrator-Icon.png",
+        "category": "Design"
+    },
+    {
+        "id": 12,
+        "skill": "Adobe Photoshop",
+        "description": "Raster graphics editor for image editing.",
+        "img": "https://i.ibb.co/TwgxDzW/Adobe-Photoshop-CC-icon-svg.webp",
+        "category": "Design"
+    },
+    {
+        "id": 13,
+        "skill": "HTML5",
+        "description": "Markup language for structuring and presenting content on the web.",
+        "img": "https://i.ibb.co/zVFbws3/HTML5-Badge-512.png",
+        "category": "Development"
+    },
+    {
+        "id": 14,
+        "skill": "CSS",
+        "description": "Style sheet language for describing the presentation of a document written in HTML.",
+        "img": "https://i.ibb.co/DYDR4PJ/CSS3-logo-svg.png",
+        "category": "Development"
+    },
+    {
+        "id": 15,
+        "skill": "C++",
+        "description": "General-purpose programming language with object-oriented features.",
+        "img": "https://i.ibb.co/GvCZ2zw/ISO-C-Logo-svg.png",
+        "category": "Familiar"
+    },
+    {
+        "id": 16,
+        "skill": "Python",
+        "description": "High-level programming language known for its readability and versatility.",
+        "img": "https://i.ibb.co/2qG664q/python.webp",
+        "category": "Familiar"
+    }
+]

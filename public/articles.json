@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "🚀 Automate Data Uploads to Strapi with Node.js 🚀",
+        "description": "Manually uploading data to Strapi can be tedious, especially when handling large datasets. But with a custom Node.js script, you can easily…",
+        "published": "Published on Sep 5, 2024",
+        "reading_time": "1 min read",
+        "link": "https://medium.com/@mdsakibchy071/automate-data-uploads-to-strapi-with-node-js-6ca4e0cd4c2b"
+    },
+    {
+        "id": "2",
+        "title": "Seamless Email Sending in React Using EmailJS",
+        "description": "I recently integrated email functionality into a React project using EmailJS. This powerful service allows email dispatch without needing a…",
+        "published": "Published on Sep 5, 2024",
+        "reading_time": "1 min read",
+        "link": "https://medium.com/@mdsakibchy071/seamless-email-sending-in-react-using-emailjs-3b77f39b9d61"
+    },
+    {
+        "id": "3",
+        "title": "JavaScript to TypeScript: A Journey of Transition",
+        "description": "In a recent team project, I explored throughout the world of TypeScript, a JavaScript superset developed by Microsoft. Even though I didn’t…",
+        "published": "Published on Feb 2, 2024",
+        "reading_time": "2 min read",
+        "link": "https://medium.com/@mdsakibchy071/javascript-to-typescript-a-journey-of-transition-cf2124a3ebc7"
+    }
+]
