@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
+import { MoonLoader } from 'react-spinners';
 
 
 export default function ProjectComponent({ }) {
@@ -58,7 +59,7 @@ export default function ProjectComponent({ }) {
 
 
 
-  if (loading) return <p>Loading projects...</p>;
+  if (loading) return <div className='flex justify-center item-center w-full h-32'><MoonLoader color="rgba(45, 212, 191, 1)" /></div>;
   if (error) return <p>Error loading projects: {error.message}</p>;
 
   return (
@@ -71,7 +72,7 @@ export default function ProjectComponent({ }) {
               return (
                 <article
                   key={item.id}
-                  className="relative overflow-hidden rounded-lg h-[300px] shadow transition hover:shadow-lg group"
+                  className="relative overflow-hidden rounded-lg h-[500px] shadow transition hover:shadow-lg group"
                 >
                   <Image
                     width={1300}
@@ -81,7 +82,7 @@ export default function ProjectComponent({ }) {
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                   />
 
-                  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 h-[300px] bottom-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
+                  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 h-[500px] bottom-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
                     <div className="p-4 sm:p-6">
                       <a href="#">
                         <h3 className="my-3 text-2xl space-grotesk-600 text-white">{item?.title}</h3>

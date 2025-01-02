@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFigma, FaHtml5, FaReact, FaGitAlt, FaGithub, FaJsSquare, FaSlack, FaDiscord } from "react-icons/fa";
+import { FaFigma, FaHtml5, FaReact, FaGitAlt, FaGithub, FaJsSquare, FaSlack, FaDiscord, FaJira } from "react-icons/fa";
 import { SiAdobexd, SiAdobeillustrator, SiTailwindcss, SiVitest } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -36,6 +36,7 @@ export default function SkillsComponent({ }) {
           <ul className="flex gap-2">
             <li className="flex gap-2 items-center"><FaGitAlt />Git,</li>
             <li className="flex gap-2 items-center"><FaGithub />GitHub,</li>
+            <li className="flex gap-2 items-center"><FaJira />Jira,</li>
             <li className="flex gap-2 items-center"><FaSlack />Slack,</li>
             <li className="flex gap-2 items-center"><RxNotionLogo />Notion,</li>
             <li className="flex gap-2 items-center"><FaDiscord />Discord</li>
