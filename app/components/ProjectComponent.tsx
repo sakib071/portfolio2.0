@@ -131,7 +131,7 @@ export default function ProjectComponent({ }) {
 
                   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 h-[500px] transition-opacity duration-500">
                     <div className="p-4 sm:p-6 flex flex-col justify-end h-full">
-                      <Link href={item.live_link} className='hover:underline'>
+                      <Link href={item.live_link} className='hover:underline' target='_blank'>
                         <h3 className="my-3 text-2xl space-grotesk-600 text-white">{item?.title}</h3>
                       </Link>
                       <div className="flex">
