@@ -1,21 +1,6 @@
 [
     {
         "id": 1,
-        "title": "Eduarr",
-        "tech_used": [
-            "React",
-            "JavaScript",
-            "Tailwind CSS",
-            "Axios",
-            "Strapi"
-        ],
-        "description": "EDUARR is a dedicated platform offering comprehensive guidance for students aspiring to study abroad. With accurate, up-to-date information and expert advice",
-        "img": "/eduarr.png",
-        "live_link": "https://eduarr.com",
-        "note": "Development"
-    },
-    {
-        "id": 2,
         "title": "TurfHub",
         "tech_used": [
             "React",
@@ -30,7 +15,7 @@
         "note": "Development"
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "Labiba Engineering",
         "tech_used": [
             "React",
@@ -42,6 +27,21 @@
         "description": "A professional business portfolio website created for a client, showcasing their engineering services and expertise. The website is live and hosted with its own domain and dedicated hosting.",
         "img": "/labibaengineering.png",
         "live_link": "https://www.labibaengineering.com/",
+        "note": "Development"
+    },
+    {
+        "id": 3,
+        "title": "Eduarr",
+        "tech_used": [
+            "React",
+            "JavaScript",
+            "Tailwind CSS",
+            "Axios",
+            "Strapi"
+        ],
+        "description": "EDUARR is a dedicated platform offering comprehensive guidance for students aspiring to study abroad. With accurate, up-to-date information and expert advice",
+        "img": "/eduarr.png",
+        "live_link": "https://eduarr.com",
         "note": "Development"
     },
     {

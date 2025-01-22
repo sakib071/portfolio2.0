@@ -4,7 +4,10 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import { Space_Grotesk } from 'next/font/google'
 
+
+const inter = Space_Grotesk({ subsets: ['latin'] })
 
 const sections = ['profile', 'projects', 'work experience', 'articles'];
 
@@ -95,8 +98,8 @@ export default function Layoutcomponent({ }) {
         <div className="navbar-center hidden lg:flex flex-col mx-auto w-[450px] justify-between h-[800px] p-5 items-start gap-10 mt-10 z-50 fixed left-52">
           <div className="flex flex-col gap-10">
             <Link href="/" className="flex flex-col text-lg">
-              <Image width={300} height={300} className="h-24 w-24 rounded-full object-cover mb-5" src="/Sakib.jpg" alt="Profile Picture" />
-              <p className="text-2xl font-bold space-grotesk-700">Mohammad Sakib Chowdhury</p>
+              <Image width={300} height={300} className="h-40 w-32 rounded-lg object-cover mb-5" src="/Sakib.jpg" alt="Profile Picture" />
+              <p className={`text-2xl font-bold space-grotesk-700 ${inter.className}`}>Mohammad Sakib Chowdhury</p>
               <p className={`text-xl font-semibold text-teal-400 space-grotesk-400`}>Front-end Developer</p>
               <p className={`text-base font-semibold mt-5 mb-10 text-zinc-300 space-grotesk-500`}>I bring digital designs to life, pixel by pixel.</p>
             </Link>
@@ -105,11 +108,11 @@ export default function Layoutcomponent({ }) {
             </ul>
           </div>
           <div className="flex flex-col-reverse justify-start items-start gap-10">
-            <div className="flex gap-5">
-              <a href="https://github.com/sakib071" target="_blank" className={`text-3xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>
-              <a href="https://www.linkedin.com/in/mohammad-sakib-chowdhury-540984163/" target="_blank" className={`text-3xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaLinkedin /></a>
-              <a href="https://www.facebook.com/sakibchy071?mibextid=ZbWKwL" target="_blank" className={`text-3xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaFacebookSquare /></a>
-              <a href="https://www.instagram.com/mohammad._.sakib?igsh=MTRtZ2J6a3R2cjNhag==" target="_blank" className={`text-3xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaInstagram /></a>
+            <div className="flex gap-3">
+              <a href="https://github.com/sakib071" target="_blank" className={`text-2xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/mohammad-sakib-chowdhury-540984163/" target="_blank" className={`text-2xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaLinkedin /></a>
+              <a href="https://www.facebook.com/sakibchy071?mibextid=ZbWKwL" target="_blank" className={`text-2xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaFacebookSquare /></a>
+              <a href="https://www.instagram.com/mohammad._.sakib?igsh=MTRtZ2J6a3R2cjNhag==" target="_blank" className={`text-2xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaInstagram /></a>
             </div>
 
 

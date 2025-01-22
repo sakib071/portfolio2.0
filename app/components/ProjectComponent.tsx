@@ -1,6 +1,7 @@
 "use client"
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import { MoonLoader } from 'react-spinners';
 
@@ -12,6 +13,7 @@ export default function ProjectComponent({ }) {
     title: string;
     img: string;
     tech_used: string[];
+    live_link: string;
     description: string;
   }
 
@@ -20,6 +22,7 @@ export default function ProjectComponent({ }) {
     title: string;
     img: string;
     tech_used: string[];
+    live_link: string;
     description: string;
   }
 
@@ -82,11 +85,11 @@ export default function ProjectComponent({ }) {
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                   />
 
-                  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 h-[500px] bottom-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
+                  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 h-[500px] bottom-0 transition-opacity duration-500">
                     <div className="p-4 sm:p-6">
-                      <a href="#">
+                      <Link href={item.live_link} target='_blank' className='hover:underline'>
                         <h3 className="my-3 text-2xl space-grotesk-600 text-white">{item?.title}</h3>
-                      </a>
+                      </Link>
                       {
                         Array.isArray(item?.tech_used) && item?.tech_used?.map((tech, index) => (
                           <span
@@ -126,11 +129,11 @@ export default function ProjectComponent({ }) {
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                   />
 
-                  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 h-[500px]  transition-opacity duration-500 opacity-0 group-hover:opacity-100">
+                  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 h-[500px] transition-opacity duration-500">
                     <div className="p-4 sm:p-6 flex flex-col justify-end h-full">
-                      <a href="#">
+                      <Link href={item.live_link} className='hover:underline'>
                         <h3 className="my-3 text-2xl space-grotesk-600 text-white">{item?.title}</h3>
-                      </a>
+                      </Link>
                       <div className="flex">
                         {
                           Array.isArray(item?.tech_used) && item?.tech_used?.map((tech, index) => (
