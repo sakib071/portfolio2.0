@@ -67,8 +67,8 @@ export default function ProjectComponent({ }) {
 
   return (
     <div id="projects" className="projects pt-32">
-      <div className={`px-5 lg:px-0 relative bg-zinc-900 text-white font-semibold mx-auto`}>
-        <h3 className="text-2xl uppercase space-grotesk-600">Web Development Projects</h3>
+      <div className={`px-5 lg:px-0 relative  font-semibold mx-auto`}>
+        <h3 className="text-2xl uppercase text-zinc-900 space-grotesk-600">Web Development Projects</h3>
         <div className="mt-5 grid lg:grid-cols-1 grid-cols-2 gap-5">
           {
             projects && projects.map((item) => {
@@ -85,7 +85,7 @@ export default function ProjectComponent({ }) {
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                   />
 
-                  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 h-[500px] bottom-0 transition-opacity duration-500">
+                  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-400/25 h-[500px] bottom-0 transition-opacity duration-500">
                     <div className="p-4 sm:p-6">
                       <Link href={item.live_link} target='_blank' className='hover:underline'>
                         <h3 className="my-3 text-2xl space-grotesk-600 text-white">{item?.title}</h3>
@@ -111,8 +111,8 @@ export default function ProjectComponent({ }) {
           }
         </div>
       </div>
-      <div className={`pt-20 px-5 lg:px-0 relative bg-zinc-900 text-white font-semibold mx-auto`}>
-        <h3 className="text-2xl uppercase space-grotesk-600">UI/UX Projects</h3>
+      <div className={`pt-20 px-5 lg:px-0 relative font-semibold mx-auto`}>
+        <h3 className="text-2xl uppercase text-zinc-900 space-grotesk-600">UI/UX Projects</h3>
         <div className="mt-5 grid grid-cols-1 gap-5">
           {
             ui && ui?.map((item) => {

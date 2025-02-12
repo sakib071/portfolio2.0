@@ -58,13 +58,13 @@ export default function Layoutcomponent({ }) {
   ));
   return (
     <div className="lg:flex lg:justify-start space-grotesk-400">
-      <div className={`navbar lg:h-screen bg-zinc-900 text-white min-h-[12px] top-0 left-0 mx-auto`}>
+      <div className={`navbar lg:h-screen  text-zinc-900 min-h-[12px] top-0 left-0 mx-auto`}>
         <div className="navbar-start flex flex-col items-start w-full">
           {/* Mobile Menu Toggle Button */}
           <div className="lg:hidden">
             <button
               type="button"
-              className={`relative size-10 m-1 flex justify-center items-center gap-2 rounded-lg font-medium text-zinc-400 shadow-sm border border-zinc-400`}
+              className={`relative size-10 m-1 flex justify-center items-center gap-2 rounded-lg font-medium text-zinc-900 shadow-sm border border-zinc-400`}
               aria-expanded={isOpen}
               onClick={handleToggle}
             >
@@ -87,7 +87,7 @@ export default function Layoutcomponent({ }) {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden absolute top-14 left-0 right-0 transition-all duration-500 ease-in-out overflow-hidden z-50 bg-zinc-900 text-white ${isOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
+          className={`lg:hidden absolute top-14 left-0 right-0 transition-all duration-500 ease-in-out overflow-hidden z-50  text-zinc-900 ${isOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
           style={{ transition: 'max-height 0.5s ease-in-out, opacity 0.5s ease-in-out' }}
         >
           <ul className="flex flex-col gap-5 mt-5 px-4 py-3">
@@ -98,10 +98,14 @@ export default function Layoutcomponent({ }) {
         <div className="navbar-center hidden lg:flex flex-col mx-auto w-[450px] justify-between h-[800px] p-5 items-start gap-10 mt-10 z-50 fixed left-52">
           <div className="flex flex-col gap-10">
             <Link href="/" className="flex flex-col text-lg">
-              <Image width={300} height={300} className="h-40 w-32 rounded-lg object-cover mb-5" src="/Sakib.jpg" alt="Profile Picture" />
+              <Image width={300} height={300} className="h-40 w-32 z-20 rounded-lg object-cover mb-5" src="/Sakib.png" alt="Profile Picture" />
+              {/* <div className="relative mb-52 w-full h-full">
+                <Image width={300} height={300} className="absolute h-40 w-32 z-20 rounded-xl object-cover" src="/Sakib.png" alt="Profile Picture" />
+                <span className="absolute top-5 left-5 z-10 h-40 w-32 rounded-xl border-2 border-[#8b322c]"></span>
+              </div> */}
               <p className={`text-2xl font-bold space-grotesk-700 ${inter.className}`}>Mohammad Sakib Chowdhury</p>
               <p className={`text-xl font-semibold text-teal-400 space-grotesk-400`}>Front-end Developer</p>
-              <p className={`text-base font-semibold mt-5 mb-10 text-zinc-300 space-grotesk-500`}>I bring digital designs to life, pixel by pixel.</p>
+              <p className={`text-base font-semibold mt-5 mb-10 text-zinc-700 space-grotesk-500`}>I bring digital designs to life, pixel by pixel.</p>
             </Link>
             <ul className="flex flex-col gap-10">
               {navOptions}
@@ -109,10 +113,10 @@ export default function Layoutcomponent({ }) {
           </div>
           <div className="flex flex-col-reverse justify-start items-start gap-10">
             <div className="flex gap-3">
-              <a href="https://github.com/sakib071" target="_blank" className={`text-2xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>
-              <a href="https://www.linkedin.com/in/mohammad-sakib-chowdhury-540984163/" target="_blank" className={`text-2xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaLinkedin /></a>
-              <a href="https://www.facebook.com/sakibchy071?mibextid=ZbWKwL" target="_blank" className={`text-2xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaFacebookSquare /></a>
-              <a href="https://www.instagram.com/mohammad._.sakib?igsh=MTRtZ2J6a3R2cjNhag==" target="_blank" className={`text-2xl text-zinc-200 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaInstagram /></a>
+              <a href="https://github.com/sakib071" target="_blank" className={`text-2xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/mohammad-sakib-chowdhury-540984163/" target="_blank" className={`text-2xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaLinkedin /></a>
+              <a href="https://www.facebook.com/sakibchy071?mibextid=ZbWKwL" target="_blank" className={`text-2xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaFacebookSquare /></a>
+              <a href="https://www.instagram.com/mohammad._.sakib?igsh=MTRtZ2J6a3R2cjNhag==" target="_blank" className={`text-2xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaInstagram /></a>
             </div>
 
 

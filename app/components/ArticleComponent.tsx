@@ -45,7 +45,7 @@ export default function ArticleComponent({ }) {
 
 
   return (
-    <div className={`py-32 px-5 lg:px-0 relative bg-zinc-900 text-white font-semibold mx-auto`}>
+    <div className={`py-32 px-5 lg:px-0 relative text-zinc-900 font-semibold mx-auto`}>
       <h3 className="text-2xl uppercase space-grotesk-600">Articles</h3>
 
       <div className="mt-5 grid grid-cols-1 gap-5">
@@ -54,13 +54,13 @@ export default function ArticleComponent({ }) {
             articles && articles?.map((item) => {
               return (
                 <li key={item.id} className="items-center justify-between w-full">
-                  <div className="flex gap-3 items-center mb-2 text-sm text-gray-800 dark:text-zinc-400">
+                  <div className="flex gap-3 items-center mb-2 text-sm text-gray-800 dark:text-zinc-900">
                     <p className="space-grotesk-400">{item.published}</p>
                     <BsDot />
                     <p className="space-grotesk-400">{item.reading_time}</p>
                   </div>
                   <p className="space-grotesk-700 text-xl mb-2 hover:underline dark:text-teal-500">{item.title}</p>
-                  <p className={`text-base bg-zinc-900 text-white`}>{item.description}  <a href="#" className="text-base space-grotesk-400 underline">Continue reading</a></p>
+                  <p className={`text-base text-zinc-900`}>{item.description}  <a href="#" className="text-base space-grotesk-400 underline">Continue reading</a></p>
                 </li>
               )
             })

@@ -32,13 +32,13 @@ export default function WorkComponent({ }) {
 
 
   return (
-    <div className={`pt-32 px-5 lg:px-0 relative w-full text-white font-semibold mx-auto`}>
+    <div className={`pt-32 px-5 lg:px-0 relative w-full text-zinc-900 font-semibold mx-auto`}>
       <h3 className="text-2xl uppercase space-grotesk-600">Work Experience</h3>
       <div className="mt-5 grid grid-cols-1 gap-5">
         <ol className="relative border-s border-gray-200 ml-3 mt-5 space-grotesk-400">
           {experienceData.map((item) => (
             <li key={item.id} className="mb-10 ms-6 border hover:border-teal-400 rounded-lg">
-              <span className="absolute flex items-center justify-center size-10 text-2xl rounded-full -start-5 bg-zinc-900 text-white">
+              <span className="absolute flex items-center justify-center size-10 text-2xl rounded-full -start-5  text-zinc-900">
                 <PiSuitcaseSimple />
               </span>
               <div className="items-center justify-between p-4 w-full border border-zinc-600 rounded-lg shadow-sm sm:flex">
