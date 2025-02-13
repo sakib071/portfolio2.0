@@ -4,12 +4,12 @@
 
 :root {
   --background: #18181b;
-  --foreground: #FFF;
+  --foreground: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #FFF;
+    --background: #fff;
     --foreground: #18181b;
   }
 }
@@ -40,6 +40,19 @@ body {
 /* Style the part of the scrollbar track */
 ::-webkit-scrollbar-track {
   background: white;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate-slow {
+  animation: rotate 5s linear infinite; /* Adjust the duration for faster/slower rotation */
 }
 
 /* <uniquifier>: Use a unique and descriptive class name */

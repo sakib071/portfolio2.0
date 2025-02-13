@@ -62,7 +62,7 @@ export default function ProjectComponent({ }) {
 
 
 
-  if (loading) return <div className='flex justify-center item-center w-full h-32'><MoonLoader color="rgba(45, 212, 191, 1)" /></div>;
+  if (loading) return <div className='flex justify-center item-center w-full h-32  mt-32'><MoonLoader color="rgba(45, 212, 191, 1)" /></div>;
   if (error) return <p>Error loading projects: {error.message}</p>;
 
   return (
