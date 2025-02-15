@@ -97,7 +97,7 @@ export default function Layoutcomponent({ }) {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden absolute top-14 left-0 right-0 transition-all duration-500 ease-in-out overflow-hidden z-50  text-zinc-900 ${isOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
+          className={`lg:hidden bg-white absolute top-14 left-0 right-0 transition-all duration-500 ease-in-out overflow-hidden z-50  text-zinc-900 ${isOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
           style={{ transition: 'max-height 0.5s ease-in-out, opacity 0.5s ease-in-out' }}
         >
           <ul className="flex flex-col gap-5 mt-5 px-4 py-3">
@@ -108,7 +108,7 @@ export default function Layoutcomponent({ }) {
         <div className="navbar-center hidden lg:flex flex-col mx-auto w-[450px] justify-between h-[800px] p-5 items-start gap-10 mt-10 z-50 fixed left-52">
           <div className="flex flex-col gap-10">
             <Link href="/" className="flex flex-col text-lg">
-              <Image width={300} height={300} className="h-40 w-32 z-20 rounded-lg object-cover mb-5" src="/Sakib.png" alt="Profile Picture" />
+              <Image width={1000} height={1000} className="h-full w-36 z-20 rounded-lg object-contain mb-5" src="/Sakib1.png" alt="Profile Picture" />
               <p className={`text-2xl font-bold space-grotesk-700 ${inter.className}`}>Mohammad Sakib Chowdhury</p>
               <p className={`text-xl font-semibold text-teal-400 space-grotesk-400`}>Front-end Developer</p>
               <p className={`text-base font-semibold mt-5 mb-10 text-zinc-700 space-grotesk-500`}>I bring digital designs to life, pixel by pixel.</p>
@@ -117,6 +117,7 @@ export default function Layoutcomponent({ }) {
               {navOptions}
             </ul>
           </div>
+
           <div className="flex flex-col-reverse justify-start items-start gap-10">
             <div className="flex gap-3">
               <a href="https://github.com/sakib071" target="_blank" className={`text-2xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>

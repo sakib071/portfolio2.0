@@ -34,12 +34,12 @@ export default function RootLayout({
         />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased grid grid-cols-3 justify-end`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased grid grid-cols-1 lg:grid-cols-3 justify-end`}
       >
-        <div className="col-span-1">
+        <div className="lg:col-span-1">
           <Layoutcomponent />
         </div>
-        <div className="col-span-2 max-w-5xl flex justify-start pr-10">
+        <div className="lg:col-span-2 max-w-5xl flex justify-start lg:pr-10">
           {children}
         </div>
       </body>

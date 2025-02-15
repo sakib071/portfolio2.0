@@ -6,6 +6,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import SkillsComponent from '../components/SkillsComponent';
 import { BiSolidPhone } from 'react-icons/bi';
+import Image from 'next/image';
+import Link from 'next/link';
 
 
 export default function HomePage() {
@@ -22,14 +24,13 @@ export default function HomePage() {
   return (
     <div className=''>
       <div className={`px-5 lg:p-0 lg:pt-20 relative text-zinc-700 font-semibold mx-auto`}>
-        {/* <div className="flex items-center gap-5">
-                    <img className="h-24 w-24 rounded-full object-cover" src="/Sakib.jpg" alt="" />
-                    <div>
-                        <h2 className="text-xl space-grotesk-600">Mohammad Sakib Chowdhury</h2>
-                        <p className={`text-lg ${theme === 'dark' ? 'text-teal-400' : ' text-zinc-500'} space-grotesk-400`}>Front-End Developer</p>
-                    </div>
-                </div> */}
-        <p className="text-base text-zinc-700 text-justify space-grotesk-400">As a front-end developer with a passion for building intuitive and dynamic web applications, I specialize in modern frameworks like <span className="text-teal-400 space-grotesk-500-italic">NextJS, React</span> and <span className="text-teal-400 space-grotesk-500-italic">Tailwind CSS</span> to craft seamless, user-friendly experiences. With a deep understanding of design tools like <span className="text-teal-400 space-grotesk-500-italic">Figma</span> and <span className="text-teal-400 space-grotesk-500-italic">Adobe XD</span>, alongside development technologies such as <span className="text-teal-400 space-grotesk-500-italic">Vite, TypeScript, JavaScript, and Git,</span> I’m committed to optimizing workflows and delivering visually compelling, responsive solutions. <br /> <br /> My skills in problem-solving, attention to detail, and project planning help me deliver efficient, high-quality results in collaborative environments.</p>
+        <Link href="/" className="lg:hidden flex flex-col text-lg">
+          <Image width={1000} height={1000} className="h-full w-36 z-20 rounded-lg object-contain mb-5" src="/Sakib1.png" alt="Profile Picture" />
+          <p className={`text-2xl font-bold space-grotesk-700`}>Mohammad Sakib Chowdhury</p>
+          <p className={`text-xl font-semibold text-teal-400 space-grotesk-400`}>Front-end Developer</p>
+          <p className={`text-base font-semibold mt-5 mb-10 text-zinc-700 space-grotesk-500`}>I bring digital designs to life, pixel by pixel.</p>
+        </Link>
+        <p className="text-base w-full text-zinc-700 text-justify space-grotesk-400">As a front-end developer with a passion for building intuitive and dynamic web applications, I specialize in modern frameworks like <span className="text-teal-400 space-grotesk-500-italic">NextJS, React</span> and <span className="text-teal-400 space-grotesk-500-italic">Tailwind CSS</span> to craft seamless, user-friendly experiences. With a deep understanding of design tools like <span className="text-teal-400 space-grotesk-500-italic">Figma</span> and <span className="text-teal-400 space-grotesk-500-italic">Adobe XD</span>, alongside development technologies such as <span className="text-teal-400 space-grotesk-500-italic">Vite, TypeScript, JavaScript, and Git,</span> I’m committed to optimizing workflows and delivering visually compelling, responsive solutions. <br /> <br /> My skills in problem-solving, attention to detail, and project planning help me deliver efficient, high-quality results in collaborative environments.</p>
 
         <div className="mt-10 space-y-3">
           <div

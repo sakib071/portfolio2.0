@@ -69,7 +69,7 @@ export default function ProjectComponent({ }) {
     <div id="projects" className="projects pt-32">
       <div className={`px-5 lg:px-0 relative  font-semibold mx-auto`}>
         <h3 className="text-2xl uppercase text-zinc-900 space-grotesk-600">Web Development Projects</h3>
-        <div className="mt-5 grid lg:grid-cols-1 grid-cols-2 gap-5">
+        <div className="mt-5 grid grid-cols-1 gap-5">
           {
             projects && projects.map((item) => {
               return (
