@@ -16,7 +16,7 @@ export default function WorkComponent({ }) {
       id: 2,
       role: "Freelance Frontend Developer & UI Designer",
       company: "Client: London-based business | Remote",
-      time: "Feb, 2024 - Present",
+      time: "Feb, 2024 - Dec 2024",
       client: "London-based business",
       href: "#",
     },

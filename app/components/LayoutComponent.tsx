@@ -3,10 +3,12 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebookSquare, FaInstagram, FaBehanceSquare } from "react-icons/fa";
 import { Space_Grotesk } from 'next/font/google';
 import Blur01 from '@/public/blur/gradientblob-2.png';
 import Blur02 from '@/public/blur/blob-01.png';
+// import ResumeDownload from "./ResumeDownload";
+import CustomButton from "./CustomButton";
 
 const inter = Space_Grotesk({ subsets: ['latin'] });
 
@@ -97,11 +99,12 @@ export default function Layoutcomponent({ }) {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden bg-white absolute top-14 left-0 right-0 transition-all duration-500 ease-in-out overflow-hidden z-50  text-zinc-900 ${isOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
+          className={`lg:hidden bg-white absolute top-14 left-0 right-0 transition-all duration-500 ease-in-out overflow-hidden z-50 text-zinc-900 ${isOpen ? 'max-h-[300px] h-full opacity-100' : 'max-h-0 opacity-0'}`}
           style={{ transition: 'max-height 0.5s ease-in-out, opacity 0.5s ease-in-out' }}
         >
           <ul className="flex flex-col gap-5 mt-5 px-4 py-3">
             {navOptions}
+            <CustomButton />
           </ul>
         </div>
 
@@ -120,12 +123,16 @@ export default function Layoutcomponent({ }) {
 
           <div className="flex flex-col-reverse justify-start items-start gap-10">
             <div className="flex gap-3">
-              <a href="https://github.com/sakib071" target="_blank" className={`text-2xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>
-              <a href="https://www.linkedin.com/in/mohammad-sakib-chowdhury-540984163/" target="_blank" className={`text-2xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaLinkedin /></a>
-              <a href="https://www.facebook.com/sakibchy071?mibextid=ZbWKwL" target="_blank" className={`text-2xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaFacebookSquare /></a>
-              <a href="https://www.instagram.com/mohammad._.sakib?igsh=MTRtZ2J6a3R2cjNhag==" target="_blank" className={`text-2xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaInstagram /></a>
+              <a href="https://github.com/sakib071" target="_blank" className={`text-3xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/mohammad-sakib-chowdhury-540984163/" target="_blank" className={`text-3xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaLinkedin /></a>
+              <a href="https://www.behance.net/sakib071" target="_blank" className={`text-3xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaBehanceSquare /></a>
+              <a href="https://www.facebook.com/sakibchy071?mibextid=ZbWKwL" target="_blank" className={`text-3xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaFacebookSquare /></a>
+              <a href="https://www.instagram.com/mohammad._.sakib?igsh=MTRtZ2J6a3R2cjNhag==" target="_blank" className={`text-3xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaInstagram /></a>
+
             </div>
           </div>
+
+          <CustomButton />
         </div>
       </div>
 
