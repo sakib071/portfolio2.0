@@ -4,6 +4,6 @@ import ProjectComponent from '../components/ProjectComponent'
 
 export default function ProjectsPage({ }) {
   return (
-    <div><ProjectComponent /></div>
+    <div id='projects' className='projects min-h-screen'><ProjectComponent /></div>
   )
 }

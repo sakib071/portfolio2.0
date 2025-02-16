@@ -32,7 +32,7 @@ export default function WorkComponent({ }) {
 
 
   return (
-    <div id='work experience' className={`work experience h-screen pt-20 px-5 lg:px-0 relative w-full text-zinc-900 font-semibold mx-auto`}>
+    <section id='work experience' className={`work experience min-h-screen pt-20 px-5 lg:px-0 relative w-full text-zinc-900 font-semibold mx-auto`}>
       <h3 className="text-2xl uppercase space-grotesk-600">Work Experience</h3>
       <div className="mt-5 grid grid-cols-1 gap-5">
         <ol className="relative border-s border-gray-200 ml-3 mt-5 space-grotesk-400">
@@ -59,6 +59,6 @@ export default function WorkComponent({ }) {
           ))}
         </ol>
       </div>
-    </div>
+    </section>
   )
 }

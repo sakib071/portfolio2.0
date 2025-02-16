@@ -21,7 +21,7 @@ export default function HomePage() {
   };
 
   return (
-    <div id='profile' className='profile h-screen'>
+    <div id='profile' className='profile min-h-screen'>
       <div className={`px-5 lg:p-0 lg:pt-20 relative text-zinc-700 font-semibold mx-auto`}>
         <Link href="/" className="lg:hidden flex flex-col text-lg">
           <Image width={1000} height={1000} className="h-full w-36 z-20 rounded-lg object-contain mb-5" src="/Sakib1.png" alt="Profile Picture" />

@@ -27,12 +27,13 @@ export default function Layoutcomponent({ }) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          console.log(`Section: ${entry.target.id}, Intersecting: ${entry.isIntersecting}`);
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
         });
       },
-      { threshold: 0.5 } // Adjust as needed to trigger earlier or later
+      { threshold: 0.1 }
     );
 
     sections.forEach((section) => {
@@ -40,8 +41,9 @@ export default function Layoutcomponent({ }) {
       if (target) observer.observe(target);
     });
 
-    return () => observer.disconnect(); // Clean up on component unmount
+    return () => observer.disconnect();
   }, []);
+
 
   const handleScroll = (section: string) => {
     const element = document.getElementById(section);

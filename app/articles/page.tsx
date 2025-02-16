@@ -3,6 +3,6 @@ import ArticleComponent from '../components/ArticleComponent'
 
 export default function ArticlePage({ }) {
   return (
-    <div><ArticleComponent /></div>
+    <div id='articles' className='articles min-h-screen'><ArticleComponent /></div>
   )
 }
