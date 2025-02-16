@@ -7,12 +7,12 @@ import { FaGithub, FaLinkedin, FaFacebookSquare, FaInstagram, FaBehanceSquare } 
 import { Space_Grotesk } from 'next/font/google';
 import Blur01 from '@/public/blur/gradientblob-2.png';
 import Blur02 from '@/public/blur/blob-01.png';
-// import ResumeDownload from "./ResumeDownload";
 import CustomButton from "./CustomButton";
+// import ResumeDownload from "./ResumeDownload";
 
 const inter = Space_Grotesk({ subsets: ['latin'] });
 
-const sections = ['profile', 'projects', 'work experience', 'articles'];
+const sections = ['profile', 'projects', 'work experience', 'articles', 'tour'];
 
 export default function Layoutcomponent({ }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,21 +45,29 @@ export default function Layoutcomponent({ }) {
 
   const navOptions = sections.map((section) => (
     <li key={section} className="relative">
-      <a
-        href={`#${section}`}
-        className={`relative cursor-pointer hover:text-teal-500 transition-colors text-base space-grotesk-400 
-                ${activeSection === section ? 'text-teal-500' : ''}
-            `}
-      >
-        {section.charAt(0).toUpperCase() + section.slice(1)}
-        <span
-          className={`absolute bottom-0 left-0 h-[2px] bg-teal-500 transition-all duration-500 transform-gpu origin-left
-                ${activeSection === section ? 'w-full' : 'w-0'}
-            `}
-        ></span>
-      </a>
+      {section === "tour" ? (
+        <div className="group relative cursor-not-allowed text-zinc-500">
+          <span className="cursor-pointer">Tour</span>
+          <div className="absolute left-1/2 transform -translate-x-28 -bottom-1 bg-zinc-800 text-white text-xs px-3 py-2 rounded-md transition-opacity duration-300">
+            🚀 Coming Soon
+          </div>
+        </div>
+      ) : (
+        <a
+          href={`#${section}`}
+          className={`relative cursor-pointer hover:text-teal-500 transition-colors text-base space-grotesk-400 
+                  ${activeSection === section ? 'text-teal-500' : ''}`}
+        >
+          {section.charAt(0).toUpperCase() + section.slice(1)}
+          <span
+            className={`absolute bottom-0 left-0 h-[2px] bg-teal-500 transition-all duration-500 transform-gpu origin-left
+                  ${activeSection === section ? 'w-full' : 'w-0'}`}
+          ></span>
+        </a>
+      )}
     </li>
   ));
+
 
   return (
     <div className="lg:flex lg:justify-start space-grotesk-400">
@@ -108,27 +116,26 @@ export default function Layoutcomponent({ }) {
           </ul>
         </div>
 
-        <div className="navbar-center hidden lg:flex flex-col mx-auto w-[450px] justify-between h-[800px] p-5 items-start gap-10 mt-10 z-50 fixed left-52">
+        <div className="navbar-center hidden lg:flex flex-col mx-auto w-[450px] justify-between h-[800px] p-5 items-start gap-10 mt-5 z-50 fixed left-52">
           <div className="flex flex-col gap-10">
             <Link href="/" className="flex flex-col text-lg">
               <Image width={1000} height={1000} className="h-full w-36 z-20 rounded-lg object-contain mb-5" src="/Sakib1.png" alt="Profile Picture" />
               <p className={`text-2xl font-bold space-grotesk-700 ${inter.className}`}>Mohammad Sakib Chowdhury</p>
               <p className={`text-xl font-semibold text-teal-400 space-grotesk-400`}>Front-end Developer</p>
-              <p className={`text-base font-semibold mt-5 mb-10 text-zinc-700 space-grotesk-500`}>I bring digital designs to life, pixel by pixel.</p>
+              <p className={`text-base font-semibold my-5 text-zinc-700 space-grotesk-500`}>I bring digital designs to life, pixel by pixel.</p>
             </Link>
-            <ul className="flex flex-col gap-10">
+            <ul className="flex flex-col gap-8 my-5">
               {navOptions}
             </ul>
           </div>
 
           <div className="flex flex-col-reverse justify-start items-start gap-10">
             <div className="flex gap-3">
-              <a href="https://github.com/sakib071" target="_blank" className={`text-3xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>
-              <a href="https://www.linkedin.com/in/mohammad-sakib-chowdhury-540984163/" target="_blank" className={`text-3xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaLinkedin /></a>
-              <a href="https://www.behance.net/sakib071" target="_blank" className={`text-3xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaBehanceSquare /></a>
-              <a href="https://www.facebook.com/sakibchy071?mibextid=ZbWKwL" target="_blank" className={`text-3xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaFacebookSquare /></a>
-              <a href="https://www.instagram.com/mohammad._.sakib?igsh=MTRtZ2J6a3R2cjNhag==" target="_blank" className={`text-3xl text-zinc-700 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaInstagram /></a>
-
+              <a href="https://github.com/sakib071" target="_blank" className={`text-3xl text-zinc-800 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/mohammad-sakib-chowdhury-540984163/" target="_blank" className={`text-3xl text-zinc-800 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaLinkedin /></a>
+              <a href="https://www.behance.net/sakib071" target="_blank" className={`text-3xl text-zinc-800 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaBehanceSquare /></a>
+              <a href="https://www.facebook.com/sakibchy071?mibextid=ZbWKwL" target="_blank" className={`text-3xl text-zinc-800 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaFacebookSquare /></a>
+              <a href="https://www.instagram.com/mohammad._.sakib?igsh=MTRtZ2J6a3R2cjNhag==" target="_blank" className={`text-3xl text-zinc-800 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaInstagram /></a>
             </div>
           </div>
 
