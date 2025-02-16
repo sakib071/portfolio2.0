@@ -43,6 +43,13 @@ export default function Layoutcomponent({ }) {
     return () => observer.disconnect(); // Clean up on component unmount
   }, []);
 
+  const handleScroll = (section: string) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   const navOptions = sections.map((section) => (
     <li key={section} className="relative">
       {section === "tour" ? (
@@ -53,8 +60,8 @@ export default function Layoutcomponent({ }) {
           </div>
         </div>
       ) : (
-        <a
-          href={`#${section}`}
+        <button
+          onClick={() => handleScroll(section)}
           className={`relative cursor-pointer hover:text-teal-500 transition-colors text-base space-grotesk-400 
                   ${activeSection === section ? 'text-teal-500' : ''}`}
         >
@@ -63,11 +70,10 @@ export default function Layoutcomponent({ }) {
             className={`absolute bottom-0 left-0 h-[2px] bg-teal-500 transition-all duration-500 transform-gpu origin-left
                   ${activeSection === section ? 'w-full' : 'w-0'}`}
           ></span>
-        </a>
+        </button>
       )}
     </li>
   ));
-
 
   return (
     <div className="lg:flex lg:justify-start space-grotesk-400">

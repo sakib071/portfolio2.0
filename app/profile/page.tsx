@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import { IoMdMail } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaSquareFacebook } from "react-icons/fa6";
 import SkillsComponent from '../components/SkillsComponent';
 import { BiSolidPhone } from 'react-icons/bi';
 import Image from 'next/image';
@@ -22,7 +21,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className=''>
+    <div id='profile' className='profile h-screen'>
       <div className={`px-5 lg:p-0 lg:pt-20 relative text-zinc-700 font-semibold mx-auto`}>
         <Link href="/" className="lg:hidden flex flex-col text-lg">
           <Image width={1000} height={1000} className="h-full w-36 z-20 rounded-lg object-contain mb-5" src="/Sakib1.png" alt="Profile Picture" />
@@ -75,7 +74,7 @@ export default function HomePage() {
               mohammad-sakib-chowdhury
             </a>
           </div>
-          <div className="flex gap-2 text-base space-grotesk-400 items-center">
+          {/* <div className="flex gap-2 text-base space-grotesk-400 items-center">
             <FaSquareFacebook className="text-teal-400" />
             <a
               className="hover:underline"
@@ -85,7 +84,7 @@ export default function HomePage() {
             >
               Mohammad Sakib Chowdhury
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <SkillsComponent />

@@ -66,7 +66,7 @@ export default function ProjectComponent({ }) {
   if (error) return <p>Error loading projects: {error.message}</p>;
 
   return (
-    <div id="projects" className="projects pt-32">
+    <div id="projects" className="projects py-20">
       <div className={`px-5 lg:px-0 relative  font-semibold mx-auto`}>
         <h3 className="text-2xl uppercase text-zinc-900 space-grotesk-600">Web Development Projects</h3>
         <div className="mt-5 grid grid-cols-1 gap-5">

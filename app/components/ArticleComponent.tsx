@@ -45,7 +45,7 @@ export default function ArticleComponent({ }) {
 
 
   return (
-    <div className={`py-32 px-5 lg:px-0 relative text-zinc-900 font-semibold mx-auto`}>
+    <div id='articles' className={`articles h-screen py-20 px-5 lg:px-0 relative text-zinc-900 font-semibold mx-auto`}>
       <h3 className="text-2xl uppercase space-grotesk-600">Articles</h3>
 
       <div className="mt-5 grid grid-cols-1 gap-5">
