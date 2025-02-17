@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFigma, FaHtml5, FaReact, FaGitAlt, FaGithub, FaJsSquare, FaSlack, FaDiscord, FaJira } from "react-icons/fa";
+import { FaFigma, FaHtml5, FaReact, FaGitAlt, FaGithub, FaSlack, FaDiscord, FaJira } from "react-icons/fa";
 import { SiAdobexd, SiAdobeillustrator, SiTailwindcss, SiVitest, SiTypescript } from "react-icons/si";
 // import { BiLogoTypescript } from "react-icons/bi";
 import { DiJsBadge } from "react-icons/di";
