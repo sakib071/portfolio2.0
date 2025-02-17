@@ -33,7 +33,7 @@ export default function Home() {
   // 🔥 Ensure nothing renders before loading is done
   if (loading) {
     return (
-      <div className="w-full h-screen flex items-center justify-center bg-black">
+      <div className="w-full h-screen flex items-center justify-center">
         <Loader loadingStates={loadingStates} loading={loading} duration={1000} />
         <button
           className="fixed top-4 right-4 text-white z-[120]"
