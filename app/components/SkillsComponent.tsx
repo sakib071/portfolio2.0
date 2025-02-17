@@ -13,14 +13,14 @@ export default function SkillsComponent({ }) {
         <h3 className="text-2xl uppercase space-grotesk-600 text-white">Skills</h3>
         <span className='absolute w-[75px] h-1 bg-teal-400'></span>
       </div>
-      <div className={`flex gap-20 mt-5  text-white`}>
+      <div className={`flex gap-20 mt-5 text-white`}>
         <div className="space-y-3">
           <p>Design Tools:</p>
           <p>Development:</p>
           <p>Collaboration:</p>
           <p>Soft Skills:</p>
         </div>
-        <div className="space-y-3">
+        <div className="space-y-3 font-normal">
           <ul className="flex gap-2 justify-start items-start text-left">
             <li className="flex gap-2 items-center"><FaFigma />Figma,</li>
             <li className="flex gap-2 items-center"><SiAdobexd />Adobe XD,</li>
