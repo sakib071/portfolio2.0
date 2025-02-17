@@ -1,0 +1,13 @@
+.grain-overlay {
+  content: "";
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  background-image: url("/grain.svg");
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Adjust the intensity of the grain effect */
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}

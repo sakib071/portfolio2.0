@@ -4,6 +4,7 @@ import "./globals.css";
 import Layoutcomponent from "./components/LayoutComponent";
 import Head from "next/head";
 import Link from "next/link";
+import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,14 +34,18 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </Head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased grid grid-cols-1 lg:grid-cols-3 justify-end`}
-      >
-        <div className="lg:col-span-1">
-          <Layoutcomponent />
-        </div>
-        <div className="lg:col-span-2 max-w-5xl flex justify-start lg:pr-10">
-          {children}
+
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <BackgroundGradientAnimation className="pointer-events-none absolute inset-0 z-0" />
+        <div className="grid grid-cols-1 lg:grid-cols-3 justify-end absolute z-50 inset-0 text-white font-bold px-4 overflow-y-scroll">
+          {/* Keep Layoutcomponent interactive */}
+          <div className="lg:col-span-1 pointer-events-auto">
+            <Layoutcomponent />
+          </div>
+          {/* Keep children interactive */}
+          <div className="lg:col-span-2 max-w-5xl flex justify-start lg:pr-10 pointer-events-auto">
+            {children}
+          </div>
         </div>
       </body>
     </html>

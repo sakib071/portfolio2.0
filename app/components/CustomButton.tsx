@@ -16,7 +16,7 @@ export default function CustomButton() {
   };
 
   return (
-    <div onClick={handleDownload} className="button-icon">
+    <div onClick={handleDownload} className="button-icon h-fit">
       <div className="cube">
         <span className="side front">Chekout my Resume</span>
         <div className='side top text-zinc-800 flex gap-1 items-center justify-center'>

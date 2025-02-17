@@ -5,10 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaFacebookSquare, FaInstagram, FaBehanceSquare } from "react-icons/fa";
 import { Space_Grotesk } from 'next/font/google';
-import Blur01 from '@/public/blur/gradientblob-2.png';
 import Blur02 from '@/public/blur/blob-01.png';
 import CustomButton from "./CustomButton";
-// import ResumeDownload from "./ResumeDownload";
 
 const inter = Space_Grotesk({ subsets: ['latin'] });
 
@@ -81,18 +79,18 @@ export default function Layoutcomponent({ }) {
     <div className="lg:flex lg:justify-start space-grotesk-400">
       {/* Blur Image 1 with Rotation Animation */}
       <Image
-        src={Blur01}
+        src={Blur02}
         alt=""
-        className="w-[500px] opacity-30 fixed top-0 -left-10 animate-rotate-slow"
+        className="w-[500px] opacity-30 fixed -top-32 lg:top-0 -left-32 lg:-left-10 animate-rotate-slow"
       />
 
-      <div className={`navbar lg:h-screen text-zinc-900 min-h-[12px] top-0 left-0 mx-auto`}>
-        <div className="navbar-start flex flex-col items-start w-full">
+      <div className={`navbar lg:h-screen text-white min-h-[12px] top-0 left-0 mx-auto`}>
+        <div className="navbar-start flex flex-col items-start w-full ">
           {/* Mobile Menu Toggle Button */}
           <div className="lg:hidden">
             <button
               type="button"
-              className={`relative size-10 m-1 flex justify-center items-center gap-2 rounded-lg font-medium text-zinc-900 shadow-sm border border-zinc-400`}
+              className={`relative size-10 m-1 flex justify-center items-center gap-2 rounded-lg font-medium text-white shadow-sm border border-zinc-400`}
               aria-expanded={isOpen}
               onClick={handleToggle}
             >
@@ -115,7 +113,7 @@ export default function Layoutcomponent({ }) {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden bg-white absolute top-14 left-0 right-0 transition-all duration-500 ease-in-out overflow-hidden z-50 text-zinc-900 ${isOpen ? 'max-h-[300px] h-full opacity-100' : 'max-h-0 opacity-0'}`}
+          className={`lg:hidden bg-zinc-900 absolute top-14 left-0 right-0 transition-all duration-500 ease-in-out overflow-hidden z-50 text-white ${isOpen ? 'max-h-[300px] h-full opacity-100' : 'max-h-0 opacity-0'}`}
           style={{ transition: 'max-height 0.5s ease-in-out, opacity 0.5s ease-in-out' }}
         >
           <ul className="flex flex-col gap-5 mt-5 px-4 py-3">
@@ -128,9 +126,9 @@ export default function Layoutcomponent({ }) {
           <div className="flex flex-col gap-10">
             <Link href="/" className="flex flex-col text-lg">
               <Image width={1000} height={1000} className="h-full w-36 z-20 rounded-lg object-contain mb-5" src="/Sakib1.png" alt="Profile Picture" />
-              <p className={`text-2xl font-bold space-grotesk-700 ${inter.className}`}>Mohammad Sakib Chowdhury</p>
-              <p className={`text-xl font-semibold text-teal-400 space-grotesk-400`}>Front-end Developer</p>
-              <p className={`text-base font-semibold my-5 text-zinc-700 space-grotesk-500`}>I bring digital designs to life, pixel by pixel.</p>
+              <p className={`lg:text-2xl md:text-base font-bold space-grotesk-700 ${inter.className}`}>Mohammad Sakib Chowdhury</p>
+              <p className={`text-xl font-semibold text-teal-400 space-grotesk-400`}>Front-end Developer <span className="text-white">|</span> UI Designer</p>
+              <p className={`text-base font-semibold my-5 text-white space-grotesk-500`}>I bring digital designs to life, pixel by pixel.</p>
             </Link>
             <ul className="flex flex-col gap-8 my-5">
               {navOptions}
@@ -139,11 +137,11 @@ export default function Layoutcomponent({ }) {
 
           <div className="flex flex-col-reverse justify-start items-start gap-10">
             <div className="flex gap-3">
-              <a href="https://github.com/sakib071" target="_blank" className={`text-3xl text-zinc-800 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>
-              <a href="https://www.linkedin.com/in/mohammad-sakib-chowdhury-540984163/" target="_blank" className={`text-3xl text-zinc-800 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaLinkedin /></a>
-              <a href="https://www.behance.net/sakib071" target="_blank" className={`text-3xl text-zinc-800 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaBehanceSquare /></a>
-              <a href="https://www.facebook.com/sakibchy071?mibextid=ZbWKwL" target="_blank" className={`text-3xl text-zinc-800 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaFacebookSquare /></a>
-              <a href="https://www.instagram.com/mohammad._.sakib?igsh=MTRtZ2J6a3R2cjNhag==" target="_blank" className={`text-3xl text-zinc-800 hover:text-teal-400 transition-colors`} rel="noreferrer"><FaInstagram /></a>
+              <a href="https://github.com/sakib071" target="_blank" className={`text-3xl text-white hover:text-teal-400 transition-colors`} rel="noreferrer"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/mohammad-sakib-chowdhury-540984163/" target="_blank" className={`text-3xl text-white hover:text-teal-400 transition-colors`} rel="noreferrer"><FaLinkedin /></a>
+              <a href="https://www.behance.net/sakib071" target="_blank" className={`text-3xl text-white hover:text-teal-400 transition-colors`} rel="noreferrer"><FaBehanceSquare /></a>
+              <a href="https://www.facebook.com/sakibchy071?mibextid=ZbWKwL" target="_blank" className={`text-3xl text-white hover:text-teal-400 transition-colors`} rel="noreferrer"><FaFacebookSquare /></a>
+              <a href="https://www.instagram.com/mohammad._.sakib?igsh=MTRtZ2J6a3R2cjNhag==" target="_blank" className={`text-3xl text-white hover:text-teal-400 transition-colors`} rel="noreferrer"><FaInstagram /></a>
             </div>
           </div>
 
@@ -155,7 +153,7 @@ export default function Layoutcomponent({ }) {
       <Image
         src={Blur02}
         alt=""
-        className="w-[500px] opacity-80 blur-3xl fixed -bottom-32 -right-24 animate-rotate-slow"
+        className="w-[600px] opacity-50 blur-3xl fixed -bottom-52 -right-52 animate-rotate-slow"
       />
     </div>
   );

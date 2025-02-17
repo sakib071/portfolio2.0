@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
-import { MoonLoader } from 'react-spinners';
 
 
 export default function ProjectComponent({ }) {
@@ -62,13 +61,30 @@ export default function ProjectComponent({ }) {
 
 
 
-  if (loading) return <div className='flex justify-center item-center w-full h-32  mt-32'><MoonLoader color="rgba(45, 212, 191, 1)" /></div>;
+  if (loading) return <div className='pt-20 px-5 lg:px-0 relative w-full text-white font-semibold mx-auto'>
+    {projects.map((item) => (
+      <div key={item.id} className="w-full">
+        <div className="flex flex-row gap-2 pt-10">
+          <div className="animate-pulse bg-gray-300 size-20 rounded-lg"></div>
+          <div className="flex flex-col gap-2">
+            <div className="animate-pulse bg-gray-300 w-72 h-4 rounded-lg"></div>
+            <div className="animate-pulse bg-gray-300 w-64 h-3 mt-2 rounded-lg"></div>
+            <div className="animate-pulse bg-gray-300 w-60 h-3 rounded-lg"></div>
+            <div className="animate-pulse bg-gray-300 w-56 h-2 rounded-lg"></div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
   if (error) return <p>Error loading projects: {error.message}</p>;
 
   return (
     <div id="projects" className="projects py-20">
       <div className={`px-5 lg:px-0 relative  font-semibold mx-auto`}>
-        <h3 className="text-2xl uppercase text-zinc-900 space-grotesk-600">Web Development Projects</h3>
+        <div className='relative'>
+          <h3 className="text-2xl uppercase space-grotesk-600">Web Development Projects</h3>
+          <span className='absolute w-[222px] h-1 bg-teal-400'></span>
+        </div>
         <div className="mt-5 grid grid-cols-1 gap-5">
           {
             projects && projects.map((item) => {
@@ -112,7 +128,10 @@ export default function ProjectComponent({ }) {
         </div>
       </div>
       <div className={`pt-20 px-5 lg:px-0 relative font-semibold mx-auto`}>
-        <h3 className="text-2xl uppercase text-zinc-900 space-grotesk-600">UI/UX Projects</h3>
+        <div className='relative'>
+          <h3 className="text-2xl uppercase space-grotesk-600">UI/UX Projects</h3>
+          <span className='absolute w-[62px] h-1 bg-teal-400'></span>
+        </div>
         <div className="mt-5 grid grid-cols-1 gap-5">
           {
             ui && ui?.map((item) => {

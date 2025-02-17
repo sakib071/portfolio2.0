@@ -1,13 +1,12 @@
 .button-icon {
   display: flex;
-  /* border: 3px #fff solid; */
+  border-top: 3px #fff solid;
   width: fit-content;
   height: fit-content;
   cursor: pointer;
-
 }
 
-.icon {
+/* .icon {
   background-color: #fff;
   padding: 10px 10px 5px 10px;
 }
@@ -15,7 +14,7 @@
 .icon svg {
   width: 25px;
   height: 25px;
-}
+} */
 
 .cube {
   transition: all 0.4s;
@@ -49,7 +48,7 @@
   background: #2dd4bf;
   color: #fff;
   transform: rotateX(-90deg) translate3d(0, 10px, 2em);
-}
+} 
 
 .front {
   background: #222229;

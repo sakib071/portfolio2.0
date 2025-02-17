@@ -8,9 +8,12 @@ import { RxNotionLogo } from "react-icons/rx";
 
 export default function SkillsComponent({ }) {
   return (
-    <div className={`relative lg:block hidden text-zinc-900 mx-auto mt-20`}>
-      <h3 className="text-2xl uppercase space-grotesk-600 text-teal-400">Skills</h3>
-      <div className={`flex gap-20 mt-5  text-zinc-700`}>
+    <div className={`relative lg:block hidden text-white mx-auto mt-20`}>
+      <div className='relative'>
+        <h3 className="text-2xl uppercase space-grotesk-600 text-white">Skills</h3>
+        <span className='absolute w-[75px] h-1 bg-teal-400'></span>
+      </div>
+      <div className={`flex gap-20 mt-5  text-white`}>
         <div className="space-y-3">
           <p>Design Tools:</p>
           <p>Development:</p>
