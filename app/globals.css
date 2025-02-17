@@ -4,6 +4,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
 }
 
 /* Style the scrollbar track */
@@ -24,9 +25,9 @@ body {
 }
 
 /* Style the part of the scrollbar track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: white;
-}
+} */
 
 @keyframes rotate {
   from {
