@@ -17,14 +17,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Sakib's Portfolio",
   description: "By Mohammad Sakib Chowdhury",
   openGraph: {
-    title: "Portfolio",
+    title: "Sakib's Portfolio",
     description: "By Mohammad Sakib Chowdhury",
     images: [
       {
-        url: "/Sakib.png", // Path to your meta image
+        url: "/Sakib.jpg", // Path to your meta image
         width: 1200,
         height: 630,
         alt: "Mohammad Sakib Chowdhury - Portfolio",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mohammad Sakib Chowdhury - Portfolio",
     description: "Welcome to my digital playground!",
-    images: ["/Sakib.png"], // Path to your meta image
+    images: ["/Sakib.jpg"], // Path to your meta image
   },
 };
 
