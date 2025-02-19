@@ -10,7 +10,8 @@ import CustomButton from "./CustomButton";
 
 const inter = Space_Grotesk({ subsets: ['latin'] });
 
-const sections = ['profile', 'projects', 'work experience', 'articles', 'tour'];
+const sections = ['profile', 'projects', 'work experience', 'articles', 'tour & photography'];
+
 
 export default function Layoutcomponent({ }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +53,7 @@ export default function Layoutcomponent({ }) {
 
   const navOptions = sections.map((section) => (
     <li key={section} className="relative">
-      {section === "tour" ? (
+      {section === "tours" ? (
         <div className="group relative cursor-not-allowed text-zinc-500">
           <span className="cursor-pointer">Tour</span>
           <div className="absolute left-1/2 transform -translate-x-28 -bottom-1 bg-zinc-800 text-white text-xs px-3 py-2 rounded-md transition-opacity duration-300">
@@ -125,7 +126,9 @@ export default function Layoutcomponent({ }) {
         <div className="navbar-center hidden lg:flex flex-col mx-auto w-[450px] md:w-[300px] lg:w-[400px] xl:w-[450px] justify-between h-[800px] p-5 items-start gap-10 mt-5 z-50 fixed md:left-10 lg:left-5 xl:left-52">
           <div className="flex flex-col gap-10">
             <Link href="/" className="flex flex-col text-lg">
-              <Image width={1000} height={1000} className="h-full w-36 z-20 rounded-lg object-contain mb-5" src="/Sakib1.png" alt="Profile Picture" />
+              <Image width={1000} height={1000} className="h-full w-36 z-20 rounded-lg object-contain mb-5" src="/Sakib02.jpg" alt="Profile Picture" />
+
+              {/* <ProfilePhotoComponent /> */}
               <p className={`lg:text-base xl:text-2xl md:text-base font-bold space-grotesk-700 ${inter.className}`}>Mohammad Sakib Chowdhury</p>
               <p className={`lg:text-sm xl:text-xl font-semibold text-teal-400 space-grotesk-400`}>Front-end Developer <br className="hidden" /><span className="text-white">|</span> UI Designer</p>
               <p className={`lg:w-2/3 xl:w-full lg:text-sm xl:text-base font-semibold my-5 text-white space-grotesk-500`}>I bring digital designs to life, pixel by pixel.</p>

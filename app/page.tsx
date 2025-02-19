@@ -8,6 +8,7 @@ import ArticlePage from "./articles/page";
 import HomePage from "./profile/page";
 import ProjectsPage from "./projects/page";
 import WorkPage from "./work-experience/page";
+import TourPage from "./tour/page";
 
 const loadingStates = [
   { text: "Booting up my creativity" },
@@ -51,6 +52,7 @@ export default function Home() {
       <ProjectsPage />
       <WorkPage />
       <ArticlePage />
+      <TourPage />
     </div>
   );
 }
