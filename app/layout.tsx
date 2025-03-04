@@ -48,13 +48,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-ZJNKMQEZL4`} strategy='afterInteractive'></Script>
+        <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-WE4HWKY3EK`} strategy='afterInteractive'></Script>
         <Script id='google-analytics' strategy='afterInteractive'>
           {`window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-ZJNKMQEZL4');`}
+        gtag('config', 'G-WE4HWKY3EK');`}
         </Script>
         <Link
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
