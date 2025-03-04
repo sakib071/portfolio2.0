@@ -5,6 +5,7 @@ import Layoutcomponent from "./components/LayoutComponent";
 import Head from "next/head";
 import Link from "next/link";
 import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
+import AnalyticsComponent from "./components/analytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,11 +48,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+        <AnalyticsComponent />
         <Link
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </Head>
+
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <BackgroundGradientAnimation className="pointer-events-none absolute inset-0 z-0" />
