@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Layoutcomponent from "./components/LayoutComponent";
-import Head from "next/head";
 import Link from "next/link";
 import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
-import AnalyticsComponent from "./components/analytics";
+import Script from 'next/script';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,13 +47,20 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
-        <AnalyticsComponent />
+      <head>
+        <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-ZJNKMQEZL4`} strategy='afterInteractive'></Script>
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZJNKMQEZL4');`}
+        </Script>
         <Link
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-      </Head>
+      </head>
 
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>

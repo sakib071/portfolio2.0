@@ -37,7 +37,6 @@ export default function ArticleComponent({ }) {
     fetchArticles();
   }, []);
 
-  console.log(articles);
   if (loading) {
     if (!articles || articles.length === 0) {
       return <p>No articles found.</p>;

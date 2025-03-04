@@ -83,6 +83,7 @@ export default function Layoutcomponent({ }) {
         src={Blur02}
         alt=""
         className="w-[500px] opacity-30 fixed -top-32 lg:top-0 -left-32 lg:-left-10 animate-rotate-slow"
+        priority
       />
 
       <div className={`navbar lg:h-screen text-white min-h-[12px] top-0 left-0 mx-auto`}>
@@ -157,6 +158,7 @@ export default function Layoutcomponent({ }) {
         src={Blur02}
         alt=""
         className="w-[600px] opacity-50 blur-3xl fixed -bottom-52 -right-52 animate-rotate-slow"
+        priority
       />
     </div>
   );
