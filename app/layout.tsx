@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Layoutcomponent from "./components/LayoutComponent";
-import Link from "next/link";
+// import Link from "next/link";
 import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
 import Script from 'next/script';
 
@@ -56,10 +56,10 @@ export default function RootLayout({
 
         gtag('config', 'G-WE4HWKY3EK');`}
         </Script>
-        <Link
+        {/* <Link
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
-        />
+        /> */}
       </head>
 
 
