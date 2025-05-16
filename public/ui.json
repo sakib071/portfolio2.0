@@ -8,19 +8,7 @@
         ],
         "description": "The Coffee App UI design showcases a modern and visually appealing interface for a coffee ordering application. The design focuses on user engagement and conversion with clear call-to-action buttons and visually appealing graphics.",
         "img": "/coffee-app-ui.png",
-        "live_link": "https://www.figma.com/design/vWCT3QOEjDp8ozTbvIfzdU/Eduarr?node-id=0-1&node-type=canvas&t=gH2ETGM25Uajrmx0-0",
-        "note": "UI Design"
-    },
-    {
-        "id": 2,
-        "title": "Educational Website UI",
-        "tech_used": [
-            "Figma",
-            "UI Design"
-        ],
-        "description": "The Educational Website UI design showcases a clean and modern layout for an online learning platform. The design focuses on user experience and engagement with interactive elements and visually appealing graphics.",
-        "img": "/study-website.png",
-        "live_link": "https://www.figma.com/design/vWCT3QOEjDp8ozTbvIfzdU/Eduarr?node-id=0-1&node-type=canvas&t=gH2ETGM25Uajrmx0-0",
+        "live_link": "https://www.figma.com/design/dBcJ9RGSp6blWyWria8sxw/UI-Home?node-id=12-896&t=jwfTTm6g000ugBNj-1",
         "note": "UI Design"
     },
     {
@@ -32,7 +20,7 @@
         ],
         "description": "The AI Chatbot Startup Landing Page design showcases a modern and professional layout. The design focuses on user engagement and conversion with clear call-to-action buttons and visually appealing graphics.",
         "img": "/todvob-landing-page.png",
-        "live_link": "https://www.figma.com/design/LVnezw5UC0oTTBd5WcRBzB/Dashboard?node-id=0-1&node-type=canvas&t=Zn6PMbWikqiSo84Q-0",
+        "live_link": "https://www.figma.com/design/dBcJ9RGSp6blWyWria8sxw/UI-Home?node-id=12-4396&t=jwfTTm6g000ugBNj-1",
         "note": "UI Design"
     },
     {
@@ -56,7 +44,7 @@
         ],
         "description": "A startup business landing page design that showcases a modern and professional layout. The design focuses on user engagement and conversion with clear call-to-action buttons and visually appealing graphics.",
         "img": "/startup-website.png",
-        "live_link": "https://www.figma.com/design/vWCT3QOEjDp8ozTbvIfzdU/Eduarr?node-id=0-1&node-type=canvas&t=gH2ETGM25Uajrmx0-0",
+        "live_link": "https://www.figma.com/design/dBcJ9RGSp6blWyWria8sxw/UI-Home?node-id=12-3395&p=f",
         "note": "UI Design"
     },
     {
@@ -68,7 +56,7 @@
         ],
         "description": "TimeForge is a sleek and modern design concept for a time-tracking application. The UI emphasizes user experience with intuitive navigation and visually appealing layouts. Designed to optimize task management and time tracking efficiency.",
         "img": "/schedule-website.png",
-        "live_link": "https://www.figma.com/design/Kkph2xa2mVKSRuhvH6ksGS/TimeForge?t=pIbYYXblb45Xssmg-0",
+        "live_link": "https://www.figma.com/design/dBcJ9RGSp6blWyWria8sxw/UI-Home?node-id=12-6483&t=jwfTTm6g000ugBNj-1",
         "note": "UI Design"
     },
     {
@@ -80,7 +68,7 @@
         ],
         "description": "The Dashboard design showcases a user-friendly admin interface for monitoring and managing tasks. The clean and responsive layout provides users with an enhanced experience by focusing on usability, making complex data visually digestible.",
         "img": "/dashboard-mockup.png",
-        "live_link": "https://www.figma.com/design/LVnezw5UC0oTTBd5WcRBzB/Dashboard?node-id=0-1&node-type=canvas&t=Zn6PMbWikqiSo84Q-0",
+        "live_link": "https://www.figma.com/design/dBcJ9RGSp6blWyWria8sxw/UI-Home?node-id=12-1953&t=jwfTTm6g000ugBNj-1",
         "note": "UI Design"
     }
 ]

@@ -85,7 +85,7 @@ export default function ProjectComponent({ }) {
           <h3 className="text-2xl uppercase space-grotesk-600">Web Development Projects</h3>
           <span className='absolute w-[222px] h-1 bg-teal-400'></span>
         </div>
-        <div className="mt-5 grid grid-cols-2 gap-5">
+        <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
           {
             projects && projects.map((item) => {
               return (
@@ -100,7 +100,7 @@ export default function ProjectComponent({ }) {
                     src={item?.img}
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                   />
-                  <div className="relative h-[350px] transition-opacity duration-500">
+                  <div className="relative h-[350px] transition-opacity duration-500 group">
                     <div className="p-4 flex flex-col justify-end h-full bg-gradient-to-tr from-black/85 to-white/5">
                       <Link href={item.live_link} target='_blank' className='hover:underline'>
                         <h3 className="my-3 text-2xl space-grotesk-600 text-white">{item?.title}</h3>
@@ -119,7 +119,7 @@ export default function ProjectComponent({ }) {
                         }
                       </div>
 
-                      <p className="mt-2 space-grotesk-400 text-sm/relaxed text-white/95">
+                      <p className="mt-2 hidden group-hover:block transition-all ease-in-out duration-500 space-grotesk-400 text-sm/relaxed text-white/95">
                         {item?.description}
                       </p>
                     </div>
@@ -135,7 +135,7 @@ export default function ProjectComponent({ }) {
           <h3 className="text-2xl uppercase space-grotesk-600">UI/UX Projects</h3>
           <span className='absolute w-[62px] h-1 bg-teal-400'></span>
         </div>
-        <div className="mt-5 grid grid-cols-2 gap-5">
+        <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
           {
             ui && ui?.map((item) => {
               return (
@@ -151,7 +151,7 @@ export default function ProjectComponent({ }) {
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                   />
 
-                  <div className="relative h-[350px] transition-opacity duration-500">
+                  <div className="relative h-[350px] transition-opacity duration-500 group">
                     <div className="p-4 flex flex-col justify-end h-full bg-gradient-to-tr from-black/85 to-white/5">
                       <Link href={item.live_link} className='hover:underline' target='_blank'>
                         <h3 className="my-3 text-xl space-grotesk-600 text-white">{item?.title}</h3>
@@ -169,7 +169,7 @@ export default function ProjectComponent({ }) {
                         }
                       </div>
 
-                      <p className="mt-2 space-grotesk-400 text-sm/relaxed text-white/95">
+                      <p className="mt-2 hidden group-hover:block transition-all ease-in-out duration-500 space-grotesk-400 text-sm/relaxed text-white/95">
                         {item?.description}
                       </p>
                     </div>
