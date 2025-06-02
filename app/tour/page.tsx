@@ -62,7 +62,7 @@ export default function TourPage() {
 
 
   return (
-    <div id='tour & photography' className='tour & photography min-h-screen py-20 px-5 lg:px-0 relative w-full text-white font-semibold mx-auto'>
+    <div  id='tour & photography' className='tour & photography min-h-screen py-20 px-5 lg:px-0 relative w-full text-white font-semibold mx-auto'>
       <div className='relative'>
         <h3 className="text-2xl uppercase space-grotesk-600">Tour & Photography</h3>
         <span className='absolute w-64 h-1 bg-teal-400'></span>
